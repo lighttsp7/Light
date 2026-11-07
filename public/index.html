@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Turn your ideas into AI-generated videos with Light Studio." />
+  <title>Light Studio — AI video generator</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="topbar wrap">
+    <a class="brand" href="#home" aria-label="Light Studio home"><span class="brand-icon">L</span> light<span class="brand-studio">STUDIO</span></a>
+    <nav><a href="#create">Create</a><a href="#how">How it works</a></nav>
+    <a class="top-cta" href="#create">Start creating <span aria-hidden="true">↗</span></a>
+  </header>
+  <main id="home">
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="live-dot"></span> YOUR IDEAS, IN MOTION</p>
+        <h1>Make a little<br />movie magic.</h1>
+        <p class="intro">Describe the scene. Set the mood. Let AI bring your next big idea to life.</p>
+        <a class="button primary" href="#create">Create your video <span aria-hidden="true">↓</span></a>
+        <p class="microcopy">A creative playground for your next great idea.</p>
+      </div>
+      <div class="hero-art" aria-label="Abstract cinematic landscape artwork">
+        <div class="sun"></div><div class="orb orb-one"></div><div class="orb orb-two"></div>
+        <div class="landscape back"></div><div class="landscape front"></div>
+        <div class="art-caption"><span>01 / DREAMSCAPE</span><span>AI GENERATED</span></div>
+      </div>
+    </section>
+
+    <section class="creator wrap" id="create">
+      <div class="section-heading">
+        <div><p class="eyebrow">THE CREATIVE STUDIO</p><h2>What should we make?</h2></div>
+        <span class="provider-pill"><span class="live-dot"></span> RUNWAY READY</span>
+      </div>
+      <form id="generator-form" class="studio-card">
+        <label for="prompt">YOUR VIDEO PROMPT</label>
+        <textarea id="prompt" maxlength="1200" required placeholder="A tiny cabin under a sky full of stars, slow cinematic camera movement..."></textarea>
+        <div class="controls">
+          <label>FORMAT<select id="ratio"><option value="16:9">Landscape · 16:9</option><option value="9:16">Portrait · 9:16</option><option value="1:1">Square · 1:1</option></select></label>
+          <label>CLIP LENGTH<select id="duration"><option value="5">5 seconds</option><option value="8" selected>8 seconds</option><option value="10">10 seconds</option></select></label>
+          <label>VISUAL MOOD<select id="style"><option value="cinematic">Cinematic</option><option value="dreamlike">Dreamlike</option><option value="documentary">Documentary</option><option value="animation">Animation</option><option value="commercial">Commercial</option></select></label>
+        </div>
+        <div class="form-footer"><span id="status" role="status" aria-live="polite">Ready when you are.</span><button class="button primary" id="generate-button" type="submit">Generate video <span aria-hidden="true">✦</span></button></div>
+      </form>
+      <section class="output-card" aria-label="Generated video result">
+        <div class="output-top"><h3>Your preview</h3><span id="result-state">WAITING FOR YOUR IDEA</span></div>
+        <div class="preview" id="preview"><div class="preview-placeholder"><span class="play-icon">▶</span><p>Your video preview will appear here.</p><span>Write a prompt above to get started</span></div></div>
+      </section>
+    </section>
+
+    <section class="how wrap" id="how">
+      <p class="eyebrow">FROM THOUGHT TO FRAME</p><h2>Simple as a good idea.</h2>
+      <div class="steps"><article><span>01</span><h3>Describe it</h3><p>Tell us what you want to see. Details make the scene yours.</p></article><article><span>02</span><h3>Set the mood</h3><p>Choose a format and visual direction for your clip.</p></article><article><span>03</span><h3>Bring it to life</h3><p>Generate a preview, then keep refining your idea.</p></article></div>
+    </section>
+  </main>
+  <footer class="wrap"><a class="brand" href="#home"><span class="brand-icon">L</span> light<span class="brand-studio">STUDIO</span></a><span>Made for ideas that move.</span></footer>
+  <script src="/script.js" defer></script>
+</body>
+</html>
